@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>¿Sales conmigo este 1ro de octubre?</title>
+  <style>
+    .body {
+      background-color: aquamarine;
+      text-align: center;
+    }
+    .hero__title {
+      color: black;
+    }
+
+    .hero__image {
+      width: 100%;
+      border-radius: 50%;
+    }
+
+  </style>
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="shortcut icon"
+    href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_corazón.svg/1200px-Heart_corazón.svg.png"
+    type="image/x-icon">
+</head>
+
+<body class="body">
+  <article class="hero">
+    <h1 class="hero__title">¿Sales conmigo este 1ro de octubre?</h1>
+    <figure class="hero__image-container">
+      <img
+        src="https://i.ibb.co/37LhLmf/Naveen-4.jpg"
+        alt="Imagen del amor" class="hero__image" />
+    </figure>
+    <button id="heroButtonSi" class="hero__button">❤Acepto❤</button>
+    <button id="heroButtonNo" class="hero__button">😭No quiero😭</button>
+  </article>
+
+  <script src="./js/index.js" type="module"></script>
+  <script>
+    const vutonSi = document.getElementById('heroButtonSi')
+    const vutonNo = document.getElementById('heroButtonNo')
+
+    const zomosNovios = () => {
+      alert('🖤Nos vemos el sabado✨... y mañana tambien');
+      alert ('Ojala te guste la cancion :3');
+      location.href = 'https://www.youtube.com/watch?v=n9ckZNXprBQ';
+    };
+
+    const ebitarKCRRompaMiBobo = () => {
+      vutonNo.style.position = 'absolute';
+      vutonNo.style.top = (Math.random() * window.innerHeight) + 'px';
+      vutonNo.style.left = (Math.random() * window.innerWidth) + 'px';
+    };
+
+    vutonSi.addEventListener('click', zomosNovios);
+    vutonNo.addEventListener('mouseover', ebitarKCRRompaMiBobo);
+
+  </script>
+</body>
+
+</html>
